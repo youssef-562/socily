@@ -113,7 +113,7 @@ Nous adorons les contributions ! Suivez notre processus :
 text
 Copier
 Modifier
-Copyright 2023 SOCily Contributors
+Copyright 2025 SOCily Contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
