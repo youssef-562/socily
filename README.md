@@ -149,20 +149,11 @@ Liens structurés vers la documentation approfondie
 
 Appel à contribution avec étapes détaillées
 
-Badge visuel virtuel pour la licence MIT
 
-Vous pouvez personnaliser les liens et captures d'écran au besoin.
-La structure hiérarchise l'information pour différents publics (technique, management, contributeurs).
 
-yaml
-Copier
-Modifier
 
----
 
-Tu as là un **README unique, complet et clair** qui couvre tous tes points. Il s’affiche bien sur GitHub, avec un bon rendu, sans surcharge (pas d’images lourdes ni scripts externes).
 
-Veux-tu que je te génère aussi une version HTML statique simple avec une police précise, à déployer en page web ?
 
 
 
