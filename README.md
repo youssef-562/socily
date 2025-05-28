@@ -30,19 +30,16 @@ SOCily révolutionne la sécurité opérationnelle en automatisant l'analyse, la
 
 ## 🚀 Architecture Moderne
 
-<!--
-```mermaid
 graph LR
-  A[Sources Logs] --> B(Loki)
-  B --> C{{Agent SOCily}}
-  C --> D[Ollama IA]
-  C --> E[TheHive]
-  C --> F[Cortex]
-  D --> G[(Base de Connaissance)]
-  E --> H[Incidents]
-  F --> I[Enrichissement]
-  C --> J[Actions Automatisées]
--->
+    A[Sources Logs] --> B[Loki]
+    B --> C{{Agent SOCily}}
+    C --> D[Ollama IA]
+    C --> E[TheHive]
+    C --> F[Cortex]
+    D --> G[(Base de Connaissance)]
+    E --> H[Incidents]
+    F --> I[Enrichissement]
+    C --> J[Actions Automatisées]
 
 🛠️ Écosystème Technologique
 Composant	Rôle	Avantages
