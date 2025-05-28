@@ -56,11 +56,12 @@ Copier
 Modifier
 # 1. Cloner le dépôt
 git clone https://github.com/votre-org/sec-ia-agent.git
+
 cd sec-ia-agent/agent
 
 # 2. Configurer l'environnement
 cp .env.example .env
-nano .env  # Adapter les paramètres
+nano .env  
 
 # 3. Installer les dépendances
 pip install -r requirements.txt
