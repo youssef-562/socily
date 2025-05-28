@@ -29,6 +29,7 @@ SOCily révolutionne la sécurité opérationnelle en automatisant l'analyse, la
 
 ## 🚀 Architecture Moderne
 
+<!--
 ```mermaid
 graph LR
   A[Sources Logs] --> B(Loki)
@@ -40,6 +41,7 @@ graph LR
   E --> H[Incidents]
   F --> I[Enrichissement]
   C --> J[Actions Automatisées]
+
 
 🛠️ Écosystème Technologique
 Composant	Rôle	Avantages
