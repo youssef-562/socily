@@ -80,6 +80,7 @@ CORTEX_API_KEY="votre_cle_secrete"
 # Alerting
 SLACK_WEBHOOK="https://hooks.slack.com/services/..."
 SMTP_SERVER="smtp.votredomaine.com"
+
 📋 Cas d'Usage Enterprise
 Scénario	Bénéfices SOCily
 SOC Interne	Surveillance 24/7, réduction MTTR de 70%
