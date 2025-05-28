@@ -8,6 +8,13 @@
 
 Un agent de sécurité intelligent qui utilise l'IA pour analyser les logs de sécurité, corréler les menaces et automatiser les réponses. Cet outil est conçu pour les équipes de sécurité qui souhaitent améliorer leur capacité de détection et de réponse aux incidents.
 
+
+
+****<img width="634" alt="image" src="https://github.com/user-attachments/assets/42402779-981b-4b13-a505-66dcbca48791" />
+
+
+
+
 ## 🌟 Fonctionnalités Principales
 
 ### 🔍 Analyse Intelligente des Logs
