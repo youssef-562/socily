@@ -41,7 +41,7 @@ graph LR
   E --> H[Incidents]
   F --> I[Enrichissement]
   C --> J[Actions Automatisées]
-
+-->
 
 🛠️ Écosystème Technologique
 Composant	Rôle	Avantages
@@ -61,6 +61,7 @@ cd sec-ia-agent/agent
 
 # 2. Configurer l'environnement
 cp .env.example .env
+
 nano .env  
 
 # 3. Installer les dépendances
