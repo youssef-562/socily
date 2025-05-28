@@ -109,46 +109,6 @@ Nous adorons les contributions ! Suivez notre processus :
 
 📦 Soumettez une Pull Request
 
-📜 Licence MIT
-text
-Copier
-Modifier
-Copyright 2025 SOCily Contributors
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-[Voir LICENSE complet dans le dépôt]
-✨ Remerciements
-Ce projet repose sur ces piliers open-source :
-
-Ollama - Inférence IA locale
-
-Grafana Loki - Gestion des logs
-
-TheHive Project - Orchestration SOC
-
-Cortex - Enrichissement
-
-📝 Notes
-Ce README propose :
-
-Design visuel moderne avec emojis stratégiques et espacement aéré
-
-Architecture claire via diagramme Mermaid intégré
-
-Tableaux comparatifs pour les technologies et cas d'usage
-
-Code snippets prêts à l'emploi pour l'installation
-
-Liens structurés vers la documentation approfondie
-
-Appel à contribution avec étapes détaillées
-
 
 
 
