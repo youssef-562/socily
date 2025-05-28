@@ -5,6 +5,7 @@ channels:
 dependencies:
   - python=3.8
   - pip
+  - pytest
   - pip:
     - fastapi==0.109.2
     - uvicorn==0.27.1
