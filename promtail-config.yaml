@@ -1,0 +1,54 @@
+server:
+  http_listen_port: 9080
+  grpc_listen_port: 0
+
+positions:
+  filename: /tmp/positions.yaml
+
+clients:
+  - url: http://loki:3100/loki/api/v1/push
+
+scrape_configs:
+  - job_name: system
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          job: security
+          __path__: /var/log/*.log
+
+  - job_name: suricata
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          job: security
+          source: suricata
+          __path__: /var/log/suricata/*.log
+
+  - job_name: ossec
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          job: security
+          source: ossec
+          __path__: /var/log/ossec/*.log
+
+  - job_name: audit
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          job: security
+          source: audit
+          __path__: /var/log/audit/audit.log
+
+  - job_name: auth
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          job: security
+          source: auth
+          __path__: /var/log/auth.log 

@@ -1,0 +1,22 @@
+[run]
+branch = True
+source = agent
+omit =
+    */tests/*
+    */__init__.py
+    */migrations/*
+
+[report]
+show_missing = True
+skip_covered = True
+exclude_lines =
+    pragma: no cover
+    if __name__ == .__main__.: 
+    @abstractmethod
+    raise NotImplementedError
+
+[html]
+directory = coverage_html_report
+
+[xml]
+output = coverage.xml 

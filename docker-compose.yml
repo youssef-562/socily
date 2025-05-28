@@ -1,0 +1,70 @@
+version: '3.8'
+
+services:
+  agent:
+    build:
+      context: ./agent
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - OLLAMA_API_URL=http://ollama:11434
+      - LOKI_API_URL=http://loki:3100
+      - THEHIVE_API_URL=http://thehive:9000
+      - CORTEX_API_URL=http://cortex:9001
+      - THEHIVE_API_KEY=${THEHIVE_API_KEY}
+      - CORTEX_API_KEY=${CORTEX_API_KEY}
+    depends_on:
+      - ollama
+      - loki
+      - thehive
+      - cortex
+
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    command: serve
+
+  loki:
+    image: grafana/loki:latest
+    ports:
+      - "3100:3100"
+    command: -config.file=/etc/loki/local-config.yaml
+    volumes:
+      - ./promtail-config.yaml:/etc/loki/local-config.yaml
+      - loki_data:/loki
+
+  promtail:
+    image: grafana/promtail:latest
+    volumes:
+      - ./promtail-config.yaml:/etc/promtail/config.yaml
+      - /var/log:/var/log
+    command: -config.file=/etc/promtail/config.yaml
+
+  thehive:
+    image: thehiveproject/thehive4:latest
+    ports:
+      - "9000:9000"
+    environment:
+      - CORTEX_URL=http://cortex:9001
+      - CORTEX_KEY=${CORTEX_API_KEY}
+    volumes:
+      - thehive_data:/opt/thp/thehive/data
+
+  cortex:
+    image: thehiveproject/cortex:latest
+    ports:
+      - "9001:9001"
+    environment:
+      - CORTEX_KEY=${CORTEX_API_KEY}
+    volumes:
+      - cortex_data:/opt/cortex/data
+
+volumes:
+  ollama_data:
+  loki_data:
+  thehive_data:
+  cortex_data: 
