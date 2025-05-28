@@ -69,14 +69,17 @@ pip install -r requirements.txt
 
 # 4. Démarrer l'agent
 python main.py --prod
-⚙️ Configuration Minimaliste
+ ⚙️ Configuration Minimaliste
 env
 Copier
 Modifier
 # Core Services
 OLLAMA_API_URL="http://localhost:11434/v1/chat"
+
 LOKI_API_URL="http://loki:3100"
+
 THEHIVE_API_KEY="votre_cle_secrete"
+
 CORTEX_API_KEY="votre_cle_secrete"
 
 # Alerting
