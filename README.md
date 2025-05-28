@@ -1,5 +1,8 @@
 # 🛡️ SOCily - Agent de Sécurité IA
 
+
+
+
 **Votre mini-SOC automatisé, propulsé par l'intelligence artificielle**  
 SOCily révolutionne la sécurité opérationnelle en automatisant l'analyse, la corrélation et la réponse aux incidents grâce à une fusion intelligente de technologies open-source.
 
