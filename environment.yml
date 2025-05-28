@@ -1,0 +1,10 @@
+name: base
+channels:
+  - defaults
+dependencies:
+  - python=3.x
+  - flake8
+  - pytest
+  # Add other required packages here, e.g.:
+  # - numpy
+  # - pandas
