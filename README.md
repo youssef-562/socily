@@ -30,7 +30,9 @@ SOCily révolutionne la sécurité opérationnelle en automatisant l'analyse, la
 
 ## 🚀 Architecture Moderne
 
+
 <img width="588" alt="image" src="https://github.com/user-attachments/assets/84b23c5f-c9b0-4ace-94f8-1190f1a29822" />
+
 
 
 🛠️ Écosystème Technologique
