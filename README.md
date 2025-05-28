@@ -46,8 +46,11 @@ graph LR
 🛠️ Écosystème Technologique
 Composant	Rôle	Avantages
 🤖 Ollama	Cerveau IA local	Modèles LLMs sécurisés, Zero Trust
+
 📊 Loki	Centralisation des logs	Requêtes LogQL, échelle horizontale
+
 🎯 TheHive	Orchestration des incidents	Collaboration SOC, playbooks
+
 ⚙️ Cortex	Enrichissement intelligent	Intégration MISP / VirusTotal
 
 🏁 Démarrage Express
