@@ -1,7 +1,7 @@
 # 🛡️ Agent de Sécurité IA
 
-<kbd>[<img title="Gabon" alt="Gabon" src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/ga.svg" width="22">](docs/translations/README.ga.md)</kbd>
-<kbd>[<img title="Open Source" alt="Open Source" src="https://img.shields.io/badge/Open%20Source-3DA639?style=for-the-badge&logo=opensourceinitiative&logoColor=white" width="22">](LICENSE)</kbd>
+[<img title="Gabon" alt="Gabon" src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/ga.svg" width="22">](docs/translations/README.ga.md)
+[![Open Source](https://img.shields.io/badge/Open%20Source-3DA639?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
 
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.109.2-green)](https://fastapi.tiangolo.com/)
