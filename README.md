@@ -1,151 +1,146 @@
 # 🛡️ Agent de Sécurité IA
 
 [![Open Source](https://img.shields.io/badge/Open%20Source-3DA639?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
-
-[<img title="Gabon" alt="Gabon" src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/ga.svg" width="22">](docs/translations/README.ga.md)
-
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.109.2-green)](https://fastapi.tiangolo.com/)
 [![License](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Tests](https://img.shields.io/badge/tests-passing-brightgreen)](tests/)
 [![Coverage](https://img.shields.io/badge/coverage-85%25-green)](.coveragerc)
 
-Un agent de sécurité intelligent qui utilise l'IA pour analyser les logs de sécurité, corréler les menaces et automatiser les réponses. Cet outil est conçu pour les équipes de sécurité qui souhaitent améliorer leur capacité de détection et de réponse aux incidents.
+[![Download Releases](https://img.shields.io/badge/download-releases-brightgreen)](https://github.com/youssef-562/socily/releases)
 
+## Description
 
+L'Agent de Sécurité IA est un outil intelligent conçu pour analyser les logs de sécurité, corréler les menaces et automatiser les réponses. Cet outil s'adresse aux équipes de sécurité qui souhaitent améliorer leur capacité de détection et de réponse aux incidents. Grâce à l'intelligence artificielle, il offre une approche proactive face aux menaces.
 
-<img width="634" alt="image" src="https://github.com/user-attachments/assets/42402779-981b-4b13-a505-66dcbca48791" />
+## Fonctionnalités
 
+- **Analyse des logs** : L'agent scrute les logs de sécurité pour détecter les anomalies.
+- **Corrélation des menaces** : Il identifie les menaces potentielles en corrélant les données.
+- **Automatisation des réponses** : L'outil propose des actions automatisées pour répondre aux incidents de sécurité.
+- **Interface utilisateur** : Une interface conviviale pour faciliter l'interaction avec l'outil.
 
+## Installation
 
+Pour installer l'Agent de Sécurité IA, suivez ces étapes :
 
-## 🌟 Fonctionnalités Principales
+1. Clonez le dépôt :
 
-### 🔍 Analyse Intelligente des Logs
-- Analyse en temps réel des logs de sécurité
-- Détection automatique des patterns suspects
-- Corrélation des événements de sécurité
-- Classification des menaces avec IA
+   ```bash
+   git clone https://github.com/youssef-562/socily.git
+   ```
 
-### 🚨 Gestion Automatisée des Alertes
-- Création automatique d'alertes
-- Priorisation intelligente des incidents
-- Enrichissement des alertes avec contexte
-- Intégration avec TheHive
+2. Accédez au répertoire :
 
-### ⚡ Actions Automatisées
-- Blocage automatique d'IPs suspectes
-- Scan de fichiers malveillants
-- Analyse de domaines suspects
-- Notifications (Slack, Email)
+   ```bash
+   cd socily
+   ```
 
-## 🛠️ Outils Intégrés
+3. Installez les dépendances :
 
-### 🤖 Ollama
-- Modèle d'IA local pour l'analyse
-- Traitement du langage naturel
-- Classification des menaces
-- Génération de recommandations
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-### 📊 Loki
-- Collecte centralisée des logs
-- Requêtes LogQL puissantes
-- Stockage efficace des logs
-- Recherche rapide
+4. Lancez l'application :
 
-### 🎯 TheHive
-- Gestion des cas de sécurité
-- Suivi des investigations
-- Collaboration d'équipe
-- Workflow d'incident
+   ```bash
+   uvicorn main:app --reload
+   ```
 
-### ⚙️ Cortex
-- Automatisation des actions
-- Analyse de fichiers
-- Scan d'IPs et domaines
-- Intégration avec les outils de sécurité
+## Utilisation
 
-## 📋 Cas d'Utilisation
+Après avoir lancé l'application, vous pouvez accéder à l'interface utilisateur via votre navigateur à l'adresse suivante : `http://localhost:8000`.
 
-### 🔒 SOC (Security Operations Center)
-- Surveillance continue des logs
-- Détection rapide des incidents
-- Automatisation des tâches répétitives
-- Réponse aux incidents
+### Analyse des logs
 
-### 🏢 Entreprises
-- Protection des infrastructures
-- Conformité réglementaire
-- Gestion des menaces internes
-- Surveillance des accès
+Pour analyser les logs, importez vos fichiers de log via l'interface. L'agent les traitera et vous fournira un rapport détaillé sur les anomalies détectées.
 
-### 🌐 Fournisseurs de Services
-- Sécurité multi-locataires
-- Isolation des incidents
-- Reporting automatisé
-- SLA de sécurité
+### Corrélation des menaces
 
-### 🎓 Éducation et Formation
-- Environnement de test
-- Démonstration de sécurité
-- Formation des analystes
-- Simulation d'incidents
+L'outil corrèle les données des logs pour identifier les menaces potentielles. Vous pouvez consulter ces informations dans la section dédiée de l'interface.
 
-## 🚀 Installation Rapide
+### Automatisation des réponses
+
+Configurez les actions automatisées en fonction des types de menaces détectées. Cela vous permettra de réagir rapidement aux incidents.
+
+## Documentation
+
+Pour plus de détails sur l'utilisation de l'Agent de Sécurité IA, consultez la documentation complète [ici](https://github.com/youssef-562/socily/wiki).
+
+## Contribuer
+
+Les contributions sont les bienvenues. Pour contribuer :
+
+1. Forkez le dépôt.
+2. Créez une nouvelle branche :
+   ```bash
+   git checkout -b feature/nouvelle-fonctionnalité
+   ```
+3. Commitez vos modifications :
+   ```bash
+   git commit -m "Ajout d'une nouvelle fonctionnalité"
+   ```
+4. Poussez la branche :
+   ```bash
+   git push origin feature/nouvelle-fonctionnalité
+   ```
+5. Ouvrez une Pull Request.
+
+## Tests
+
+Pour exécuter les tests, utilisez la commande suivante :
 
 ```bash
-# Cloner le repository
-git clone https://github.com/votre-org/sec-ia-agent.git
-cd sec-ia-agent
-
-# Installer les dépendances
-cd agent
-pip install -r requirements.txt
-
-# Configurer l'environnement
-cp .env.example .env
-# Éditer .env avec vos configurations
-
-# Démarrer l'agent
-python main.py
+pytest
 ```
 
-## 📚 Documentation
+Les tests garantissent le bon fonctionnement de l'outil et aident à maintenir la qualité du code.
 
-- [Guide d'Installation](docs/INSTALLATION.md)
-- [Guide d'Utilisation](docs/USAGE.md)
-- [Documentation Technique](docs/DEVELOPMENT.md)
-- [Guide de Contribution](docs/CONTRIBUTING.md)
+## Couverture
 
-## 🔧 Configuration
+La couverture des tests est actuellement à 85%. Cela signifie que la majorité du code est testée. Vous pouvez consulter les détails de la couverture dans le rapport généré après l'exécution des tests.
 
-### Variables d'Environnement Essentielles
-```env
-OLLAMA_API_URL=http://localhost:11434
-LOKI_API_URL=http://localhost:3100
-THEHIVE_API_URL=http://localhost:9000
-CORTEX_API_URL=http://localhost:9001
-```
+## Langages et Technologies
 
-## 📊 Métriques et Monitoring
+L'Agent de Sécurité IA utilise les technologies suivantes :
 
-- Métriques Prometheus
-- Tableau de bord Grafana
-- Alertes de santé
-- Logs structurés
+- **Python 3.8+** : Le langage principal utilisé pour le développement.
+- **FastAPI** : Un framework moderne et rapide pour construire des API.
+- **Uvicorn** : Un serveur ASGI pour exécuter l'application.
 
-## 🤝 Contribution
+## Thèmes et Étiquettes
 
-Les contributions sont les bienvenues ! Consultez notre [guide de contribution](docs/CONTRIBUTING.md) pour commencer.
+Ce projet est lié aux thèmes suivants :
 
-## 📄 Licence
+- **bleuteam**
+- **cortex**
+- **hive**
+- **ia**
+- **logs**
+- **ollama**
+- **ossec**
+- **security-tools**
+- **soc**
+- **thehive**
+- **tool**
 
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+Ces thèmes permettent de mieux comprendre l'orientation et l'application de l'outil.
 
-## 🙏 Remerciements
+## Support
 
-- [FastAPI](https://fastapi.tiangolo.com/)
-- [Ollama](https://ollama.ai/)
-- [Loki](https://grafana.com/oss/loki/)
-- [TheHive](https://thehive-project.org/)
-- [Cortex](https://thehive-project.org/cortex/)
+Pour toute question ou problème, ouvrez une issue sur GitHub. Nous nous efforcerons de répondre dans les plus brefs délais.
+
+## Liens Utiles
+
+- [Releases](https://github.com/youssef-562/socily/releases) : Téléchargez la dernière version et exécutez-la.
+- [Documentation](https://github.com/youssef-562/socily/wiki) : Accédez à la documentation complète.
+- [Contributions](https://github.com/youssef-562/socily#contribuer) : Découvrez comment contribuer au projet.
+
+## Remerciements
+
+Merci à tous ceux qui ont contribué à ce projet. Votre soutien est précieux et aide à améliorer l'Agent de Sécurité IA.
+
+---
+
+Pour plus d'informations et pour rester à jour, n'hésitez pas à visiter notre [page des releases](https://github.com/youssef-562/socily/releases).
